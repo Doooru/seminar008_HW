@@ -46,30 +46,6 @@ int[,] GetArray(int L, int S)
     return matrix;
 }
 
-// int[,] GetArray(int L, int S)
-// {
-//     int[,] matrix = new int[L, S];
-//     matrix [0,0] = 1;
-//     for (int xi = 1; xi < matrix.GetLength(0)/2 + matrix.GetLength(0)%2; ++xi)
-//         for (int i = 0; i < matrix.GetLength(0); ++i)
-//             for (int j = 1; j < matrix.GetLength(1); ++j)
-//                 matrix [i,j] = matrix [i,j-1] + 1;
-
-//         for (int j = 1 ; j < matrix.GetLength(1); ++j)
-//             for (int i = 1; i < matrix.GetLength(0); ++i)
-//                 matrix [i,j] = matrix [i-1,j] + 1;
-
-//         for (int i = matrix.GetLength(0)-1; i < 0; --i)
-//             for (int j = matrix.GetLength(1)-1; j < 1; --j)
-//                 matrix [i,j] = matrix [i,j+1] + 1;
-
-
-
-
-//     return matrix;
-// }
-
-
 void PrintMatrixInts(int[,] matrix)
 {
     for (int i = 0; i < matrix.GetLength(0); ++i)
